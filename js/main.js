@@ -16,17 +16,25 @@ console.log(discountAmount1);
 console.log(discountAmount2);
 console.log(priceAtKm);
 
+
 // # SVOLGIMENTO
-if (firstUserAge < 18 ) {
-        console.log ( discountAmount1 );
-    } else if (firstUserAge > 65) {
-        console.log ( discountAmount2 );
+if (firstUserAge > 18 && firstUserAge < 65) {
+        console.log(totalprice);
+    }
+    else if (firstUserAge < 18) {
+        console.log(totalprice - discountAmount1);
+        alert("Il prezzo del biglietto con sconto è di " + (totalprice - discountAmount1).toFixed(0.21) + "€");
+    }
+    else if (firstUserAge > 65) {
+        console.log(totalprice - discountAmount2);
+        alert("Il prezzo del biglietto con sconto è di " + (totalprice - discountAmount2) .toFixed(0.21) + "€");
     }
     
 
 
-
-
-// OUTPUT
+// # OUTPUT
+output = alert("Il prezzo del biglietto è di " + totalprice.toFixed(0.21) + "€");
+output = alert("Il prezzo del biglietto con sconto è di " + (totalprice - discountAmount1).toFixed(0.21) + "€");
+output = alert("Il prezzo del biglietto con sconto è di " + (totalprice - discountAmount2).toFixed(0.21) + "€");
 
 
